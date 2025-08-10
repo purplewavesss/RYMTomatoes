@@ -61,7 +61,6 @@ function matchToMap(matches) {
         var cleanMatch = match.replace("[", "");
         cleanMatch = cleanMatch.replace("]", "");
         pair = cleanMatch.split(", ");
-        console.log(pair)
         scores.set(Number(pair[0]), Number(pair[1]));
     });
 
