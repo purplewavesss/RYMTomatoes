@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "RYMTomatoes",
+  "version": "1.0",
+
+  "description": "Adds a Rotten Tomatoes score to albums on RYM.",
+
+  "icons": {
+    "48": "icons/sonemic-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://rateyourmusic.com/release/*"],
+      "js": ["rymtomatoes.js"]
+    }
+  ],
+  
+  "browser_specific_settings": {
+	  "gecko": 
+	  {
+		  "id": "rymtomatoes@1.0"
+	  }
+  }
+}
